@@ -6,9 +6,9 @@
 
 var config = {
 	port: 8080,
-	ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"],
+	ipWhitelist: ["::fff:0.0.0.0/1", "::fff:128.0.0.0/2", "::fff:192.0.0.0/3", "::fff:224.0.0.0/4", "127.0.0.1", "::ffff:127.0.0.1", "::1"],
 
-	language: 'en',
+	language: 'de',
 	timeFormat: 24,
 	units: 'metric',
 
