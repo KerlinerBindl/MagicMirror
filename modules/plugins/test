@@ -1,1 +1,24 @@
+/* global Module */
+
+/* Magic Mirror
+ * Module: Testmodul
+ *
+ * By Thorsten Maass
+ * MIT Licensed.
+ */
+
+Module.register("test",{
+
+	// Default module config.
+	defaults: {
+		text: "Hello World! This is a test"
+	},
+
+	// Override dom generator.
+	getDom: function() {
+		var wrapper = document.createElement("div");
+		wrapper.innerHTML = this.config.text;
+		return wrapper;
+	}
+});
 
